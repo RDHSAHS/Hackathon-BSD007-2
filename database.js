@@ -77,7 +77,7 @@ const ram = [
   },
   {
     id: 4,
-    name: 'Corsair Vengeance RGB Pro DDR4-320 (2 x 32GB',
+    name: 'Corsair Vengeance RGB Pro DDR4-320 (2 x 32GB)',
     price: 3_250_000
   },
   {

@@ -4,26 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="test.css">
 </head>
 <body>
-  <p id="tulisan ">tulisan</p>
-  <ul id="menu">
-    <li id="first">First</li>
-    <li id="second">Second</li>
-    <li id="third ">Third</li>
-  </ul>
-  <script>
-    // console.info (document.title);
-    // console.info (document.head);
-    // console.info (document.body) ;
-    // const tulisan =  document.getElementById("tulisan");
-    // console.info(tulisan); 
-    const menu = document.getElementById("menu") ;
-    console.info(menu); 
-    console.info(menu.childNodes);
-    const second =  document.getElementById("second");
-    console.info(second);
-    console.info(second.textContent);
-  </script>
+  <h1 id="header">This is Header</h1>
+  <p>This is paragraph . . .</p>
+  <div class="dropdown">
+    <div class="select">
+      <span class="selected">CPU</span>
+        <div class="caret"></div>
+      </div>
+        <ul class="menu">
+          <li class="active">Intel Core i5-13400</li>
+          <li>AMD Ryzen 5 7600</li>
+          <li>AMD Ryzen 7 7800X3D</li>
+          <li>Intel Core i7-13700K</li>
+          <li>AMD Ryzen 9 7950X3D</li>
+          <li>Intel Core i9-13900K</li>
+        </ul>
+  </div>
+  <div class="dropdown">
+    <div class="select">
+      <span class="selected">MOTHERBOARD</span>
+        <div class="caret"></div>
+      </div>
+        <ul class="menu">
+          <li class="active">Asus Prime H610M-A D4</li>
+          <li>Gigabyte Z790 Aorus Xtreme</li>
+          <li>Gigabyte Z690 Aorus Pro</li>
+          <li>ASRock Z690 Extreme WiFi 6E</li>
+          <li>MSI MAG B760M Mortar Wi-Fi</li>
+        </ul>
+  </div>
+  <div class="dropdown">
+    <div class="select">
+      <span class="selected">RAM</span>
+        <div class="caret"></div>
+      </div>
+        <ul class="menu">
+          <li class="active">G.Skill Trident Z5 Neo RGB DDR5-6000 (2 x 16GB)</li>
+          <li>G.Skill Trident Z5 RGB DDR5-6000 (2 x 16GB)</li>
+          <li>Samsung DDR5-4800 (2 x 16GB)</li>
+          <li>Corsair Vengeance RGB Pro DDR4-320 (2 x 32GB)</li>
+          <li>Patriot Viper Steel DDR4-3600 (2 x 32GB)</li>
+        </ul>
+  </div>
+  <div class="dropdown">
+    <div class="select">
+      <span class="selected">GPU</span>
+        <div class="caret"></div>
+      </div>
+        <ul class="menu">
+          <li class="active">MSI Gaming GeForce RTX 4090</li>
+          <li>MSI Gaming Radeon RX 7900 XTX</li>
+          <li>Sapphire 11310-01-20G Pulse</li>
+          <li>PowerColor Fighter AMD Radeon RX 6650 XT</li>
+          <li>ZOTAC Gaming GeForce RTX 4070</li>
+        </ul>
+  </div>
+  <div class="dropdown">
+    <div class="select">
+      <span class="selected">STORAGE</span>
+        <div class="caret"></div>
+      </div>
+        <ul class="menu">
+          <li class="active">Samsung 990 Pro (2TB) SSD</li>
+          <li>WD Black SN850X 2TB</li>
+          <li>WD Black SN850X 4TB</li>
+          <li>Nextorage Japan 4TB SSD for PS5 and PC</li>
+          <li>4TB TeamGroup MP34 M.2 PCIe 3.0 SSD</li>
+        </ul>
+  </div>
+  <div class="dropdown">
+    <div class="select">
+      <span class="selected">PSU</span>
+        <div class="caret"></div>
+      </div>
+        <ul class="menu">
+          <li class="active">Corsair CX450</li>
+          <li>Corsair CX550F RGB</li>
+          <li>Corsair RM550x</li>
+          <li>XPG Core Reactor 650W</li>
+          <li>Cooler Master V750 Gold V2</li>
+        </ul>
+  </div>
+  <div class="dropdown">
+    <div class="select">
+      <span class="selected">CASING</span>
+        <div class="caret"></div>
+      </div>
+        <ul class="menu">
+          <li class="active">Fractal Design North</li>
+          <li>Fractal Design Meshify 2 Compact</li>
+          <li>Phanteks Eclipse G360A</li>
+          <li>NZXT H7 Flow</li>
+          <li>Cooler Master HAF 700 Evo</li>
+        </ul>
+  </div>
 </body>
+<script type="text/javascript" src="test.js">  </script>
 </html>
