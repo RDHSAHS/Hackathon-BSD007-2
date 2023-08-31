@@ -34,37 +34,48 @@
                   <div class="title-cpu">Central Processing Unit (CPU)</div>
                   <select class="form-select" name="State" id="form-cpu">
                         <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="1">Intel Core i5-13400</option>
+                        <option value="2">AMD Ryzen 5 7600</option>
+                        <option value="3">AMD Ryzen 7 7800X3D</option>
+                        <option value="4">Intel Core i7-13700K</option>
+                        <option value="5">AMD Ryzen 9 7950X3D</option>
+                        <option value="6">Intel Core i9-13900K</option>
                       </select>
                   <div class="title-motherboard">Motherboard</div>
                   <select class="form-select" name="State" id="form-motherboard">
                         <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="1">Asus Prime H610M-A D4</option>
+                        <option value="2">Gigabyte Z790 Aorus Xtreme</option>
+                        <option value="3">Gigabyte Z690 Aorus Pro</option>
+                        <option value="4">ASRock Z690 Extreme WiFi 6E</option>
+                        <option value="5">MSI MAG B760M Mortar Wi-Fi</option>
                       </select>
                   <div class="title-ram">Random Access Memory (RAM)</div>
                   <select class="form-select" name="State" id="form-ram">
                         <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="1">G.Skill Trident Z5 Neo RGB DDR5-6000 (2 x 16GB)</option>
+                        <option value="2">G.Skill Trident Z5 RGB DDR5-6000 (2 x 16GB)</option>
+                        <option value="3">Samsung DDR5-4800 (2 x 16GB)</option>
+                        <option value="4">Corsair Vengeance RGB Pro DDR4-320 (2 x 32GB)</option>
+                        <option value="5">Patriot Viper Steel DDR4-3600 (2 x 32GB)</option>
                   </select>
                   <div class="title-storage">Storage Drive</div>
                   <select class="form-select" name="State" id="form-storage">
                         <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="1">Samsung 990 Pro (2TB) SSD</option>
+                        <option value="2">WD Black SN850X 2TB</option>
+                        <option value="3">WD Black SN850X 4TB</option>
+                        <option value="4">Nextorage Japan 4TB SSD for PS5 and PC</option>
+                        <option value="5">4TB TeamGroup MP34 M.2 PCIe 3.0 SSD</option>
                   </select>
                   <div class="title-gpu">Graphic Processing Unit (GPU)</div>
                   <select class="form-select" name="State" id="form-gpu">
                     <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="1">MSI Gaming GeForce RTX 4090</option>
+                    <option value="2">MSI Gaming Radeon RX 7900 XTX</option>
+                    <option value="3">Sapphire 11310-01-20G Pulse</option>
+                    <option value="4">PowerColor Fighter AMD Radeon RX 6650 XT</option>
+                    <option value="5">ZOTAC Gaming GeForce RTX 4070</option>
                   </select>
                   </form>
             </div>
@@ -100,7 +111,16 @@
 
 </body>
           <script>
-            
+            // window.onload = function() {
+            //   if (sessionStorage.getItem('cpu') == 'cpu') {
+            //     return;
+            //   }
+            //   var name = sessionStorage.getItem('cpu');
+            //   if (cpu !== null) $('#form-cpu').val(cpu);
+            // }
 
+            // window.onbeforeunload = function() {
+            //   sessionStorage.setItem("cpu", $('#form-cpu').val());
+            // }
           </script>
 </html>
