@@ -17,14 +17,14 @@ option value {
 .main-screen {
   background: #ffffff;
   width: 1512px;
-  height: 93%;
-  position: fixed;
+  height: 85%;
+  position: absolute;
   overflow: hidden;
 }
 .main-layout {
   width: 1189px;
-  height: 754px;
-  position: absolute;
+  height: 100%;
+  position:absolute;
   left: calc(50% - 594px);
   top: calc(50% - 336px);
 }
