@@ -1,13 +1,3 @@
-/*
-1. CPU
-2. MOTHER
-3. RAM
-4. GPU
-5. STORAGE
-6. PSU
-7. CASING
-*/
-
 const cpu = [
   {
     id: 1,
