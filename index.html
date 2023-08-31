@@ -5,14 +5,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Opung Bikin PC</title>
       <link rel="stylesheet" href="style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 <body>
-      <div class="main-screen">
-            <div class="main-layout">
-              <div class="btn-submit">
-                <div class="btn-orange"></div>
-                <div class="btn-serahkanke-opung">Serahkan PC ke Opung</div>
-              </div>
+      <div class="container">
+        <div class="main-layout">
+              <button id="btn-orange" style="color: #ffffff;text-align: center;font: 700 14px Helvetica Neue, sans-serif;">Serahkan PC ke Opung</button>
               <div class="angka-total-sblm-pajak">Rp 415.967.300</div>
               <div class="title-total">Total Biaya</div>
               <div class="separator"></div>
@@ -31,56 +30,77 @@
                 </div>
               </div>
                   <form>
-                  <div class="title-cpu">Central Processing Unit (CPU)</div>
-                  <select class="form-cpu" name="State" id="input7">
-                        <option>pilih cpu</option>
-                        <option value="Alabama">Alabama</option>
-                        <option value="Wisconsin">Wisconsin</option>
-                        <option value="Wyoming">Wyoming</option>                              
-                  </select>
                   <div class="title-header">Pilih Komponen PC</div>
-                  <select class="form-motherboard" name="State" id="input7">
-                        <option></option>
-                        <option value="Alabama">Alabama</option>
-                        <option value="Wisconsin">Wisconsin</option>
-                        <option value="Wyoming">Wyoming</option>                              
-                  </select>
+                  <div class="title-cpu">Central Processing Unit (CPU)</div>
+                  <select class="form-select" name="State" id="form-cpu">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
                   <div class="title-motherboard">Motherboard</div>
-                  <select class="form-ram" name="State" id="input7">
-                        <option></option>
-                        <option value="Alabama">Alabama</option>
-                        <option value="Wisconsin">Wisconsin</option>
-                        <option value="Wyoming">Wyoming</option>                              
-                  </select>
+                  <select class="form-select" name="State" id="form-motherboard">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
                   <div class="title-ram">Random Access Memory (RAM)</div>
-                  <select class="form-storage" name="State" id="input7">
-                        <option></option>
-                        <option value="Alabama">Alabama</option>
-                        <option value="Wisconsin">Wisconsin</option>
-                        <option value="Wyoming">Wyoming</option>                              
+                  <select class="form-select" name="State" id="form-ram">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
                   </select>
                   <div class="title-storage">Storage Drive</div>
+                  <select class="form-select" name="State" id="form-storage">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                  </select>
                   <div class="title-gpu">Graphic Processing Unit (GPU)</div>
-                  <select class="form-gpu" name="State" id="input7">
-                        <option></option>
-                        <option value="Alabama">Alabama</option>
-                        <option value="Wisconsin">Wisconsin</option>
-                        <option value="Wyoming">Wyoming</option>                              
+                  <select class="form-select" name="State" id="form-gpu">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
                   </select>
                   </form>
             </div>
             <div class="nav-bar">
-              <div class="opung-bikin-pc">opung bikin pc</div>
-              <div class="btn-tanya-opung">
-                <div class="rectangle-41"></div>
-                <div class="tanya-opung">Tanya Opung</div>
-              </div>
-              <div class="btn-tanya-opung">
-                <div class="rectangle-412"></div>
-                <div class="ganti-nama">Ganti Nama</div>
-              </div>
+              <div id="opung-bikin-pc">opung bikin pc</div>
+                <button id="open-modal3" onclick="modal3()" class="rectangle-41" style="color: #ffffff;text-align: center;font: 700 14px Helvetica Neue, sans-serif;">Tanya Opung</button>
+                <button class="rectangle-412" style="color: #ffffff;text-align: center;font: 700 14px Helvetica Neue, sans-serif;">Ganti Nama</button>
             </div>
-          </div>
-          
+
+          <!-- Modal 3 -->
+
+            <div class="modal-3-quest" style="display: none;">
+              <div class="kotak-modal-3"></div>
+              <div class="left">
+                <div class="opung-bikin-pc">opung<br />bikin<br />pc</div>
+                <div class="hackathon-8-kelompok-2">Hackathon8 - Kelompok 2</div>
+              </div>
+              <div class="seperate"></div>
+              <div class="text-quest">
+                <div
+                  class="tolong-buat-kan"
+                >
+                  Tolong buat kan saya PC dengan spek yang saya inginkan, alias spek Opung
+                  ya ....<br />hahahaha.... , <br /><br />Ingat jangan mengecewakan opung
+                  ya.....<br />
+                </div>
+                <div class="quest">Quest:</div>
+              </div>
+              <!-- Button Mengerti -->
+                <button close-modal3 class="rectangle-45" style="color: #ffffff;text-align: center;font: 700 14px Helvetica Neue, sans-serif;">Mengerti</button>
+            </div>            
+
+
 </body>
+          <script>
+            
+
+          </script>
 </html>

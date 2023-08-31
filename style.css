@@ -1,45 +1,60 @@
 .main-screen,
 .main-screen * {
   box-sizing: border-box;
-  margin: 0;
 }
 
-option value {
-      color: #50596c;
-      text-align: left;
-      font: 400 15px "Inter", sans-serif;
-      position: relative;
-      left: calc(50% - 542.5px);
-      top: calc(50% - 248px);
-      width: 237px;
-      height: 17px;
+button {
+  opacity: 0.6;
+  border: 0;
 }
+
+button:hover { opacity: 1;}
+
+
 .main-screen {
   background: #ffffff;
   width: 1512px;
-  height: 93%;
-  position: fixed;
+  height: 982px;
+  position: relative;
   overflow: hidden;
 }
 .main-layout {
   width: 1189px;
   height: 754px;
+  margin-top: -25px;
   position: absolute;
   left: calc(50% - 594px);
   top: calc(50% - 336px);
 }
+
+.nav-bar {
+    background: #ffffff;
+    width: 100%;
+    height: 78px;
+    top:0;
+    position: fixed;
+    left: 0;
+    
+    /* left: calc(50% - 756px); */
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+
 .btn-submit {
   position: absolute;
   inset: 0;
 }
-.btn-orange {
+#btn-orange {
   background: #ee7e5b;
   border-radius: 11px;
   width: 581px;
   height: 60px;
-  position: absolute;
+  position:absolute;
   left: calc(50% - 542.5px);
   top: calc(50% - -279px);
+}
+#btn-orang:hover {
+  opacity: 1;
 }
 .btn-serahkanke-opung {
   color: #ffffff;
@@ -115,7 +130,6 @@ option value {
   width: 402px;
   height: 531px;
   position: absolute;
-  background-size: cover;
   left: calc(50% - -114.92px);
   top: calc(50% - 319px);
 }
@@ -171,7 +185,7 @@ option value {
   width: 192px;
   height: 19px;
 }
-.form-motherboard {
+#form-motherboard {
   background: #fffdfd;
   border-radius: 8px;
   border-style: solid;
@@ -193,7 +207,7 @@ option value {
   width: 103px;
   height: 17px;
 }
-.form-ram {
+#form-ram {
   background: #fffdfd;
   border-radius: 8px;
   border-style: solid;
@@ -215,7 +229,7 @@ option value {
   width: 250px;
   height: 17px;
 }
-.form-storage {
+#form-storage {
   background: #fffdfd;
   border-radius: 8px;
   border-style: solid;
@@ -237,7 +251,7 @@ option value {
   width: 107px;
   height: 17px;
 }
-.form-gpu {
+#form-gpu {
   background: #fffdfd;
   border-radius: 8px;
   border-style: solid;
@@ -259,7 +273,7 @@ option value {
   width: 242px;
   height: 17px;
 }
-.form-cpu {
+#form-cpu {
   background: #fffdfd;
   border-radius: 8px;
   border-style: solid;
@@ -291,17 +305,8 @@ option value {
   width: 259px;
   height: 22px;
 }
-.nav-bar {
-  background: #ffffff;
-  width: 100%;
-  top: 0;
-  height: 75px;
-  position: fixed;
-  left: calc(50% - 756px);
-  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-}
-.opung-bikin-pc {
+
+#opung-bikin-pc {
   color: #000000;
   text-align: center;
   font: 400 25px "Race Sport Free", sans-serif;
@@ -347,3 +352,106 @@ option value {
   left: calc(50% - 520.5px);
   top: calc(50% - 9px);
 }
+
+/* Modal 3 CSS */
+
+.modal-3-quest,
+.modal-3-quest * {
+  box-sizing: border-box;
+}
+.modal-3-quest {
+  width: 1059px;
+  height: 715px;
+  position: relative;
+  overflow: hidden;
+}
+.kotak-modal-3 {
+  background: #ce603e;
+  border-radius: 32px;
+  width: 906px;
+  height: 619px;
+  position: absolute;
+  left: 77px;
+  top: 48px;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+}
+.left {
+  position: absolute;
+  inset: 0;
+}
+.opung-bikin-pc {
+  color: #ffffff;
+  text-align: right;
+  font: 400 51px "Race Sport Free", sans-serif;
+  position: absolute;
+  left: 154px;
+  top: 230px;
+}
+.hackathon-8-kelompok-2 {
+  color: #f6f6f6;
+  text-align: right;
+  font: 300 italic 17px/33px "Inter", sans-serif;
+  position: absolute;
+  left: 147px;
+  top: 407px;
+  width: 241px;
+  height: 36px;
+}
+.seperate {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px 0 0 0;
+  width: 272px;
+  height: 0px;
+  position: absolute;
+  left: 458px;
+  top: 221px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.text-quest {
+  position: absolute;
+  inset: 0;
+}
+.tolong-buat-kan {
+  color: #f6f6f6;
+  text-align: left;
+  font: 500 17px/28px "Inter", sans-serif;
+  position: absolute;
+  left: 527px;
+  top: 276px;
+  width: 386px;
+  height: 166px;
+}
+.quest {
+  color: #f6f6f6;
+  text-align: left;
+  font: 400 36px "Play", sans-serif;
+  position: absolute;
+  left: 527px;
+  top: 218px;
+  width: 140px;
+  height: 48px;
+}
+.button-mengerti {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-45 {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 335px;
+  height: 44px;
+  position: absolute;
+  left: 527px;
+  top: 453px;
+}
+.mengerti {
+  color: #ce603e;
+  text-align: center;
+  font: 700 18px "Inter", sans-serif;
+  position: absolute;
+  left: 654px;
+  top: 464px;
+}
+
