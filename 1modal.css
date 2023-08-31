@@ -1,0 +1,43 @@
+
+
+.modal-1-jeremi {
+width: 641px;
+height: 733px;
+border-radius: 25px;
+background: #F5F0E1;
+}
+
+.frame-1{
+    margin:  604px 20px 88px 146px;
+    display: inline-flex;
+    height: 41px;
+    padding: 12px 180px 11px 10px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+}
+
+.frame-3{
+    display: flex;
+    width: 641px;
+    padding: 20px 301px 19px 297px;
+    align-items: center;
+    background: #EE7E5B;
+    }
+
+
+.username {
+        width: 120px;
+height: 26px;
+flex-shrink: 0;
+Copy
+color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+
